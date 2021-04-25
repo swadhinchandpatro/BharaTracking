@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BharaTracking</string>
+    <string name="email">Email Id</string>
+    <string name="password">Password*</string>
+    <string name="login">LOGIN</string>
+    <string name="action_notification">notification</string>
+    <string name="action_logout">LOGOUT</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="newUser">Not a Member yet? Sign Up here.</string>
+    <string name="fullName">Full Name</string>
+    <string name="mobileNumber">Mobile Number*</string>
+    <string name="location">Location*</string>
+    <string name="confirmPassword">Confirm Password*</string>
+    <string name="terms_conditions">By clicking SignUp you agree all the Terms and Conditions.</string>
+    <string name="signUp">SIGN UP</string>
+    <string name="already_user">Already have Account? Login here.</string>
+    <string name="registered_emailid">Please enter your Registered Email Id below:</string>
+    <string name="submit">SUBMIT</string>
+    <string name="back">BACK</string>
+    <string name="verify">VERIFY</string>
+    <string name="vehicle_select">All</string>
+    <string name="vlist_spinner_title">Choose Vehicle</string>
+
+    <string name="title_activity_dashboard">Dashboard</string>
+
+    <string name="records">RECORDS</string>
+    <string name="alerts">ALERTS</string>
+    <string name="send_cmd">CONTROLS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="forgot_password_subject">Forgot Password Bharattracking</string>
+    <string name="forgot_password_body">Your request for a new password is registred.
+        Please enter the following code to verify your request.
+        Your code is
+    </string>
+    <string name="admin_email">sales@bharattracking.com</string>
+    <string name="admin_pass">siwi_2016</string>
+    <string name="support_email">sales.siwi@gmail.com</string>
+    <string name="support_pass">bharattracking2018</string>
+    <string name="root_email">root@bharattracking.com</string>
+    <string name="forgot_password_security_code">Code sent to Email</string>
+    <string name="action_resend">Resend Security Code?</string>
+    <string name="action_search">Search</string>
+    <string name="action_clear_refresh_record">REFRESH</string>
+    <string name="fullScreen">Fullscreen</string>
+    <string name="take_snapshot">Snapshot</string>
+    <string name="title_activity_show_on_maps">Map</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_view_titles">
+        <item>Dashboard</item>
+        <item>TvlReport</item>
+        <item>StopReport</item>
+    </string-array>
+    <string name="run_list">RunTimes</string>
+    <string name="stop_list">Stops</string>
+
+    <string name="start_wifi_task">Start WiFi Task</string>
+    <string name="start_charging_task">Start Charging Task</string>
+    <string name="turn_on_wifi">Turn on WiFi</string>
+    <string name="start_periodic_task">Start Periodic Task</string>
+    <string name="stop_periodic_task">Stop Periodic Task</string>
+
+    <string name="description_wifi_task">
+        WiFi Task: This task will run as soon as your device is connected to WiFi.
+        Clicking the button below will disconnect your WiFi and schedule the task, re-connect your WiFi for the task to run.
+    </string>
+    <string name="description_charging_task">
+        Charging Task: This task will run as soon as your device is connected to power.
+        Disconnect your phone from USB Power and click the button below. Then plug your phone back in for the task to run.
+    </string>
+    <string name="description_periodic_task">
+        Periodic Task: This task will run every five seconds.
+        Use the buttons below to start and stop the periodic task.
+    </string>
+    <string name="title_activity_maps">Map</string>
+    <string name="action_show_map">ShowMap</string>
+    <string name="default_vehicle_no">OR1234</string>
+    <string name="default_location">unknown</string>
+    <string name="default_last_updated">2018-01-10 11:59:00</string>
+    <string name="default_ignition">Ignition : </string>
+    <string name="default_speed">Speed : </string>
+    <string name="search_hint">search...</string>
+    <string name="action_show_record">SHOW_RECORD</string>
+    <string name="show_satellite_mapview">Satellite</string>
+    <string name="show_route_onmap">Route</string>
+    <string name="enter_start_datetime">Start Date Time</string>
+    <string name="enter_end_datetime">End Date Time</string>
+    <string name="pick_date">PICK DATE</string>
+    <string name="pick_time">PICK TIME</string>
+    <string name="pick_current_datetime">Current Time</string>
+    <string name="default_odometer">Odometer :</string>
+    <string name="google_maps_web_services_key">AIzaSyCRABtIgP377Q2VZby9VZElgWjWDBx13_w</string>
+    <string name="ignduration">for </string>
+    <string name="notifications_admin_channel_name">GENERAL_VEHICLE_INFO</string>
+    <string name="notifications_admin_channel_description">It gives the general data such as vname,vunitid,vpeed,vign,vodom aloong with ign status change</string>
+    <string name="action_mark_all_read">Clear All</string>
+    <string name="action_clear_all">Mark All as Read</string>
+    <string name="bt_website">www.bharattracking.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="route">ROUTE</string>
+    <string name="admin_phone">7904459203</string>
+    <string name="default_wspmsg">I need some assistance</string>
+    <string name="clear">Clear</string>
+    <string name="start_date_text">0000-00-00 00:00</string>
+    <string name="apply">Apply</string>
+    <string name="default_duration">00:00</string>
+    <string name="zero">0</string>
+    <string name="duration">duration:</string>
+    <string name="select_vehicle">VEHICLE :</string>
+    <string name="select_cmd">ACTION :</string>
+    <string name="send">SEND</string>
+    <string name="set_odom_command">ODM=</string>
+    <string name="stop_immobilize_command">STOPV</string>
+    <string name="start_immobilize_command">STARTV</string>
+    <string name="set_maxspeed">SETgrAX</string>
+    <string name="help_desk_phone">+919769359949</string>
+    <string name="key_notifyme">notifyme</string>
+    <string name="title_new_alert">Get Alerts</string>
+    <string name="key_new_alert_ringtone">alert_ringtone</string>
+    <string name="summary_choose_ringtone">choose notification sound</string>
+    <string name="pref_title_ringtone">Alert Sound</string>
+    <string name="key_vibrate">vibrate</string>
+    <string name="summary_vibrate">vibrate phone on new alert</string>
+    <string name="title_vibrate">Vibrate</string>
+    <string name="summary_alert">get regular alerts about important events</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_privacy_policy">Privacy Policy</string>
+    <string name="starttime">start time</string>
+    <string name="no_stops">No Stops</string>
+    <string name="enter_odom_value">Enter Value</string>
+    <string name="demo_use_text">click on BT logo for demo</string>
+    <string name="odom_command_suffix">00</string>
+    <string name="contact_us">CONTACT US</string>
+
+    <string name="control_vehicle">Controls</string>
+    <string-array name="cmd_list">
+        <item>SET ODOMETER</item>
+        <item>SET MAXSPEED</item>
+        <item>UNLOCK ENGINE</item>
+        <item>LOCK ENGINE</item>
+    </string-array>
+
+    <string-array name="duration_values">
+        <item>1h</item>
+        <item>2h</item>
+        <item>4h</item>
+        <item>8h</item>
+        <item>1d</item>
+        <item>2d</item>
+        <item>3d</item>
+    </string-array>
+
+    <string-array name="signal_msg">
+        <item>@string/no_signal</item>
+        <item>@string/low_signal</item>
+        <item>@string/med_signal</item>
+        <item>@string/good_signal</item>
+        <item>@string/high_signal</item>
+    </string-array>
+
+    <string-array name="tabLayoutTitles">
+        <item>@string/records</item>
+        <item>@string/alerts</item>
+        <item>@string/send_cmd</item>
+    </string-array>
+
+    <string name="title_activity_route">Map</string>
+    <string name="travel_report">Travel Report</string>
+    <string name="stop_report">Stop Report</string>
+    <string name="report">REPORT</string>
+    <string name="go_to_first_stop">Go to First Stop</string>
+    <string name="stop_start">From :</string>
+    <string name="stop_end">To :</string>
+    <string name="last_stop_dist_text">From Last Stop</string>
+    <string name="trip_start_dist_text">From Trip Start</string>
+    <string name="text_no_report">Report Unavailable</string>
+    <string name="search_address_hint">Seach Address...</string>
+    <string name="help_text">help</string>
+    <string name="call_driver">Call Driver</string>
+    <string name="more">more</string>
+    <string name="no_signal">no signal</string>
+    <string name="low_signal">low</string>
+    <string name="med_signal">medium</string>
+    <string name="good_signal">good</string>
+    <string name="high_signal">high</string>
+    <string name="status_running">running</string>
+    <string name="status_stopped">stopped</string>
+    <string name="status_dormant">engine off</string>
+    <string name="status_nworking">not working</string>
+    <string name="all_stops">Stop Points</string>
+    <string name="driver_mobile">Enter Number…</string>
+    <string name="driver_mobile_disclaimer">Enter the Driver No Once</string>
+    <string name="show_traffic">Show Traffic</string>
+    <string name="share_location">Share</string>
+    <string name="choose_share_using">Choose Any One App to Share</string>
+</resources>

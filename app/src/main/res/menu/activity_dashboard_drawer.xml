@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="Dashboard" />
+        <!--<item-->
+            <!--android:id="@+id/nav_live_tracking"-->
+            <!--android:icon="@drawable/ic_location_on_black_24dp"-->
+            <!--android:title="Live Track" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_travel_report"-->
+            <!--android:icon="@drawable/travel_report_icon"-->
+            <!--android:title="@string/travel_report" />-->
+        <item
+            android:id="@+id/nav_stoppage_report"
+            android:icon="@drawable/ic_report_record"
+            android:title="@string/stop_report" />
+        <!--<item-->
+            <!--android:id="@+id/nav_distance_summary"-->
+            <!--android:icon="@drawable/route"-->
+            <!--android:title="Distance Summary" />-->
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Setting" />
+        <!--<item-->
+            <!--android:id="@+id/nav_profile"-->
+            <!--android:icon="@drawable/ic_person_outline_black_24dp"-->
+            <!--android:title="Profile" />-->
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_about_us"-->
+                <!--android:icon="@drawable/ic_group_black_24dp"-->
+                <!--android:title="About Us" />-->
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_security_black_24dp"
+                android:title="Privacy Policy" />
+            <!--<item-->
+                <!--android:id="@+id/nav_extra"-->
+                <!--android:icon="@drawable/privacy_policy_icon"-->
+                <!--android:title="Privacy Policy" />-->
+        </menu>
+    </item>
+
+</menu>

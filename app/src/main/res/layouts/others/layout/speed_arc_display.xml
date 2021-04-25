@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="@dimen/speed_display_margin"
+    tools:showIn="@layout/activity_maps"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.marcinmoskala.arcseekbar.ArcSeekBar
+        android:id="@+id/speedSeekBar"
+        android:layout_width="190dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:progressColor="@color/gradient_one"
+        app:progressBackgroundColor="@color/black"
+        app:progress="@integer/default_vehicle_speed"
+        app:maxProgress="@integer/max_vehicle_speed"
+        app:enabled="false" />
+    <TextView
+        android:id="@+id/speedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:text="0 k/m"
+        android:textColor="@color/gradient_one"/>
+</RelativeLayout>

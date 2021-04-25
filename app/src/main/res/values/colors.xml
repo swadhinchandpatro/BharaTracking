@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fab_color">#9b013f</color>
+    <color name="background_color">#34495E</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+    <color name="vehicle_no_color">#aee</color>
+
+    <color name="running_color">#059610</color>
+    <color name="stopped_color">#D1BF1F</color>
+    <color name="dormant_color">#d11f1f</color>
+    <color name="nworking_color">#01209c</color>
+
+    <color name="black">#000000</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="green">#01a73b</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_color_transparent">#b3465c73</color>
+
+    <color name="tcolorPrimary">#065E52</color>
+    <color name="tcolorPrimaryDark">#054E43</color>
+    <color name="tcolorAccent">#bae6e0</color>
+
+    <color name="tcolorTextPrimary">#FFFFFF</color>
+    <color name="tcolorTextDisable">#a5ffffff</color>
+    <color name="graylight">#fafafa</color>
+    <color name="gradient_one">#026c7c</color>
+    <color name="gradient_two">#0296ac</color>
+    <color name="gradient_top">#c7ecf2</color>
+    <color name="running_bg">#bff9be</color>
+    <color name="stopped_bg">#F4EDAB</color>
+    <color name="dormant_bg">#f4b2ab</color>
+    <color name="nworking_bg">#bacaf2</color>
+    <color name="logo_red">#b90404</color>
+    <color name="logo_blue">#071348</color>
+    <color name="violet">#a11394</color>
+    <color name="bottomsheet_dark">#3E236B</color>
+    <color name="bottomsheet_light">#CC3E236B</color>
+    <color name="route_color">#99031053</color>
+    <color name="signal_off">#A7A4A4</color>
+    <color name="signal_on">@color/running_color</color>
+</resources>

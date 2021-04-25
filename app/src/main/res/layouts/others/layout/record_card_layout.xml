@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="record layout list item">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/record_card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="-5dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="2dp"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/vehicle_icon"
+                android:tag="image_tag"
+                android:layout_width="50dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_car_red"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vehicle_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_vehicle_no"
+                    android:textColor="#040404"
+                    android:typeface="sans"
+                    android:textSize="@dimen/vehicle_no"
+                    android:textStyle="bold"/>
+
+                <!--Datetime-->
+                <TextView
+                    android:id="@+id/updated_time"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/vehicle_no"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@id/more_options"
+                    android:gravity="right"
+                    android:text="@string/default_last_updated"
+                    android:textSize="12dip"
+                    android:textColor="#10bcc9"
+                    android:textStyle="bold"/>
+
+                <ImageButton
+                    android:id="@+id/more_options"
+                    android:layout_width="22dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/location_info"
+                    android:layout_alignParentEnd="true"
+                    android:background="#63EEEEEE"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    app:contentDescription="@string/more"
+                    app:srcCompat="@drawable/ic_more_vert_red_24dp" />
+                <TextView
+                    android:id="@+id/location_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/vehicle_no"
+                    android:textColor="#343434"
+                    android:textSize="@dimen/location_text"
+                    android:layout_marginTop="5dp"
+                    android:text="14 highway,bhubaneshwar,Odisha" />
+                <!--information-->
+                <LinearLayout
+                    android:id="@+id/ignInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/ampm_left_padding"
+                    android:layout_below="@id/location_info">
+
+                    <ImageView
+                        android:id="@+id/ignImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentDescription="Ign Status"
+                        app:srcCompat="@drawable/ic_car_key_red" />
+                    <TextView
+                        android:id="@+id/ignTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        tools:text="00h00m"
+                        android:textSize="12sp"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/signalInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/ampm_left_padding"
+                    android:layout_alignBottom="@id/ignInfo"
+                    android:layout_toEndOf="@id/ignInfo">
+
+                    <ImageView
+                        android:id="@+id/signalImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:contentDescription="Ign Status"
+                        app:srcCompat="@drawable/ic_wifi" />
+
+                    <TextView
+                        android:id="@+id/signal_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:textStyle="italic"
+                        tools:text="low signal" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/speedInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/ampm_left_padding"
+                    android:layout_below="@id/location_info"
+                    android:layout_toEndOf="@id/signalInfo">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentDescription="Ign Status"
+                        app:srcCompat="@drawable/ic_speedometer" />
+                    <TextView
+                        android:id="@+id/speedometer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        tools:text="15 km/h"
+                        android:textSize="12sp"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/odometerInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:padding="@dimen/ampm_left_padding"
+                    android:layout_below="@id/location_info"
+                    android:layout_toEndOf="@id/speedInfo">
+
+                    <ImageView
+                        android:id="@+id/odom_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:contentDescription="Ign Status"
+                        app:srcCompat="@drawable/ic_numbers" />
+                    <TextView
+                        android:id="@+id/odometer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        tools:text="15 km"
+                        android:textSize="12sp"
+                        android:textStyle="italic"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

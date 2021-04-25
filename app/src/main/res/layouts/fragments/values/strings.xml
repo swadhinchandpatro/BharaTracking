@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="share_location_message">Type a Message...</string>
+    <string name="whatsapp">WHATSAPP</string>
+    <string name="email_us">EMAIL</string>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+
+    <!--  ListRow Left side Thumbnail image -->
+    <LinearLayout android:id="@+id/tvlr_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginEnd="5dip">
+
+        <ImageView
+            android:id="@+id/tvlr_list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/rihanna"/>
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/tvlr_vehicle_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tvlr_thumbnail"
+        android:layout_toEndOf="@id/tvlr_thumbnail"
+        android:text="@string/default_vehicle_no"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!-- Duration Value -->
+    <LinearLayout
+        android:id="@+id/durationvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvlr_vehicle_no"
+        android:layout_toEndOf="@id/tvlr_thumbnail">
+
+        <TextView
+            android:id="@+id/tvlr_running_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#343434"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="@string/default_duration" />
+        <TextView
+            android:id="@+id/tvlr_stopped_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#343434"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="@string/default_duration" />
+        <TextView
+            android:id="@+id/tvlr_dormant_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#343434"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="@string/default_duration" />
+        <TextView
+            android:id="@+id/tvlr_nworking_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#343434"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="@string/default_duration" />
+    </LinearLayout>
+    
+    <!--duration text-->
+    <LinearLayout
+        android:id="@+id/durationtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/durationvalue"
+        android:layout_toEndOf="@id/tvlr_thumbnail">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#06610d"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="running"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#89110f"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="stopped"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#833907"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="dormant"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#011461"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="not working"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!-- Info Value -->
+    <LinearLayout
+        android:id="@+id/infovalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/durationtext"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@id/tvlr_thumbnail">
+
+        <TextView
+            android:id="@+id/tvlr_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#343434"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="@string/zero" />
+        <TextView
+            android:id="@+id/tvlr_distance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#343434"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="@string/zero" />
+        <TextView
+            android:id="@+id/tvlr_avgspeed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#343434"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="@string/zero" />
+        <TextView
+            android:id="@+id/tvlr_maxspeed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#343434"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="@string/zero" />
+    </LinearLayout>
+
+    <!--duration text-->
+    <LinearLayout
+        android:id="@+id/infotext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/infovalue"
+        android:layout_toEndOf="@id/tvlr_thumbnail">
+
+        <TextView
+            android:id="@+id/alertorstop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#cc1395"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="Alerts"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#cc1395"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="km"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#cc1395"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="Avg.Speed"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#cc1395"
+            android:textSize="13sp"
+            android:layout_marginTop="1dip"
+            android:text="Max.Speed"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Endend Arrow -->
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow_right"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@id/tvlr_vehicle_no"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- When item pressed this item will be triggered -->
+    <item android:state_pressed="true">
+        <shape
+            android:shape="rectangle">
+            <!-- Gradient BgColor for listrow Selected -->
+            <solid android:color="@color/dormant_bg"/>
+            <corners
+                android:radius="10dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="rectangle">
+            <!-- Gradient BgColor for listrow Selected -->
+            <gradient
+                android:startColor="#89110f"
+                android:centerColor="#f4b2ab"
+                android:endColor="#d9f7da"
+                android:angle="270" />
+            <corners
+                android:radius="10dp"/>
+            <stroke
+                android:color="#fd302c"
+                android:width="3px"/>
+        </shape>
+    </item>
+</selector>

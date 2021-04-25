@@ -1,0 +1,43 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context=".activities.DashboardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/run_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+
+        <ListView
+            android:id="@+id/run_item_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/run_search"
+            android:divider="#b5b5b5"
+            android:nestedScrollingEnabled="true"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector" />
+
+        <TextView
+            android:id="@+id/text_no_report"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/run_search"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/text_no_report"
+            android:textSize="@dimen/textNoRecordSize"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

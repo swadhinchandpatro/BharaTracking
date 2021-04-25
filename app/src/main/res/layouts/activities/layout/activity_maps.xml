@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MapsActivity">
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gradient_one"
+        android:theme="@style/AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            app:popupTheme="@style/PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Spinner
+        android:id="@+id/choose_vehicle"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="#80000000"
+        android:popupBackground="@color/green"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:visibility="gone"/>
+
+    <Spinner
+        android:id="@+id/mapTypeSpinner"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="#80000000"
+        android:popupBackground="@color/green"
+        android:layout_marginTop="?android:attr/actionBarSize"/>
+
+    <include
+        android:id="@+id/speed_display"
+        layout="@layout/speed_arc_display"/>
+
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/bottomsheet_livetrack" />
+
+</android.support.design.widget.CoordinatorLayout>

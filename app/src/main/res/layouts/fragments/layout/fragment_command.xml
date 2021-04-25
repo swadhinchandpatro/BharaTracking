@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cntrols_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#14919999">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="7dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="8dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="8dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="8dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/control_vehicle_id"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_marginTop="15dp"
+                android:padding="5dp"
+                android:text="@string/control_vehicle"
+                android:textColor="#E4646464"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.102"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/help_icon"
+                android:layout_width="33dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ripple_effect"
+                android:contentDescription="@string/help_text"
+                app:layout_constraintBottom_toBottomOf="@+id/control_vehicle_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/control_vehicle_id"
+                app:layout_constraintTop_toTopOf="@+id/control_vehicle_id"
+                app:layout_constraintVertical_bias="0.062"
+                app:srcCompat="@drawable/ic_help_outline_black_24dp" />
+
+            <TextView
+                android:id="@+id/vehicleno"
+                android:layout_width="184dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="#3CD0ECF8"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:text="@string/select_vehicle"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/control_vehicle_id"
+                app:layout_constraintVertical_bias="0.028"/>
+
+            <TextView
+                android:id="@+id/command"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="8dp"
+                android:background="#3CD0ECF8"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="10dp"
+                android:text="@string/select_cmd"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.537"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vehicleno" />
+
+            <EditText
+                android:id="@+id/value_to_send"
+                android:layout_width="119dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="36dp"
+                android:autofillHints="ODOMETER"
+                android:ems="10"
+                android:inputType="number"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/send_command"
+                app:layout_constraintHorizontal_bias="0.368"
+                app:layout_constraintStart_toStartOf="@+id/send_command"
+                app:layout_constraintTop_toBottomOf="@+id/command" />
+
+            <Button
+                android:id="@+id/send_command"
+                android:layout_width="100dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:shadowRadius="5"
+                android:shadowColor="@color/iron"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:background="@drawable/button_transparent_border"
+                android:drawableEnd="@android:drawable/ic_menu_send"
+                android:drawableTint="@color/white"
+                android:text="@string/send"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/command"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toStartOf="@+id/command"
+                app:layout_constraintTop_toBottomOf="@+id/value_to_send"
+                app:layout_constraintVertical_bias="0.053" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
